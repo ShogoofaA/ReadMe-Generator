@@ -20,6 +20,7 @@ This is a ReadMe generator that can create future project ReadMe's in a much mor
 ## Installation
 
 1.) Please copy the github link and clone into your own repository.
+
 2.) Make sure that you have Node.js installed, if not please follow this link: https://nodejs.org/
 
 
