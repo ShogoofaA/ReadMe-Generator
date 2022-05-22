@@ -24,7 +24,7 @@ function generateMarkdown(data) {
 
   - [Tests](#tests)
 
-  - [Questions](#Questions)
+  - [Questions](#questions)
 
 
   ## Description
