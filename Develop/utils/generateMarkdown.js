@@ -1,8 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-
-}
+function renderLicenseBadge(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -26,6 +24,9 @@ function generateMarkdown(data) {
 
   - [Tests](#tests)
 
+  - [Questions](#Questions)
+
+
   ## Description
   ${data.description}
   ## Installation
@@ -39,7 +40,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  If you have any questions about the repo, open an issue or contact me directly at [email](https://${data.emailAddress}). You can find more of my work at [gitHub](https://github.com/${data.gitHub}).
+  If you have any questions about the repo, open an issue or contact me directly at [${data.gitHub}](https://github.com/${data.gitHub}). You can find more of my work at [${data.emailAddress}](user@example.com).
 
 `;
 }

@@ -69,7 +69,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log('It Worked! Please preview the ReadMe file!');
+        console.log('Success! Your ReadMe file has been generated, please preview the ReadMe file that was just created!');
     })
 }
 
