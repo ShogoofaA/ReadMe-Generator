@@ -3,11 +3,11 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-inquirer.prompt([
+const questions = [
     {
         type: 'input',
         message: 'What is your GithHub username?',
-        name: 'gitHubName',
+        name: 'gitHub',
 
     },
     {
@@ -29,9 +29,10 @@ inquirer.prompt([
 
     },
     {
-        type: 'list',
+        type: 'checkbox',
         message: 'What kind of licence should your project have?',
         name: 'license',
+        choices: ['MIT', 'Apache', 'GPL', 'BSD', 'None']
 
     },
     {
@@ -60,7 +61,7 @@ inquirer.prompt([
     },
     
     
-])
+]
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -68,7 +69,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log('It Worked! Please preview your ReadMe file inside the CreatedReadMe Folder!');
+        console.log('It Worked! Please preview the ReadMe file!');
     })
 }
 
